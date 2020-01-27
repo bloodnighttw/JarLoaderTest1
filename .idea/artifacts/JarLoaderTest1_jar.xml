@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="JarLoaderTest1:jar">
+    <output-path>$PROJECT_DIR$/build/classes/java/main</output-path>
+    <root id="archive" name="JarLoaderTest1.jar">
+      <element id="module-output" name="JarLoaderTest1.main" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.8.6/9180733b7df8542621dc12e21e87557e8c99b8cb/gson-2.8.6.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
