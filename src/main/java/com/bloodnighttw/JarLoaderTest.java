@@ -41,10 +41,23 @@ public class JarLoaderTest {
          *      ClassLoade
          */
 
+        URL[] urls={new URL("jar:file:"+Path+"JarLoaderTest1.jar/!/")};
 
+        URLClassLoader  ucl=URLClassLoader.newInstance(urls);
 
+        Class c=ucl.loadClass(fg.getMainClassPakagePath());
 
+        ExtendPoint ep = null;
 
+        try {
+            ep= (ExtendPoint) c.newInstance();
+        } catch (InstantiationException e) {
+            e.printStackTrace();
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        }
+
+        ep.messanger();
 
 
     }
